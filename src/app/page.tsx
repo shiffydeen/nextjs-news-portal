@@ -1,9 +1,21 @@
+import Banner from "@/components/Banner";
 import Image from "next/image";
 
-export default function Home() {
+export default async function Home() {
+
+  const response = await fetch(`https://news-api-next-js-kappa.vercel.app/api/news`)
+
   return (
-    <div>
-      <h1 className="text-2xl font-bold text-yellow-600">Hello Developer</h1>
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+      <Banner />
+
+      <div className="my-12">
+        <h2 className="text-2xl font-bold mb-8">
+          Latest News
+        </h2>
+      </div>
     </div>
+
   );
 }

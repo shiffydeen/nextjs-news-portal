@@ -2,9 +2,9 @@ import React from 'react'
 
 const Newspage = () => {
   return (
-    <div>
-      Newspage
-    </div>
+    <section className='py-12 '>
+      <h2 className='text-2xl font-bold mb-8'></h2>
+    </section>
   )
 }
 
